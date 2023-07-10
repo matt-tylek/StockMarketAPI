@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Stock Data Fetcher</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+  <style media="screen">
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f6f6f6;
+      padding: 20px;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      font-weight: 500;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    select {
+      padding: 10px;
+      font-size: 16px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Stock Data Fetcher</h1>
+    <h2>Select a Stock</h2>
+    <form action="/data" method="post">
+      <select name="stockSelected">
+        <option value="RELIANCE">RELIANCE</option>
+        <option value="INFY">INFOSYS</option>
+        <option value="TCS">TCS</option>
+        <option value="WIPRO">WIPRO</option>
+        <option value="ICICIBANK">ICICI Bank</option>
+        <option value="ITC">ITC</option>
+      </select>
+      <br><br>
+      <button type="submit">Fetch Data</button>
+    </form>
+  </div>
+</body>
+
+</html>
